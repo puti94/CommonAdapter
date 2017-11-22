@@ -21,8 +21,8 @@ class CollectionAdapter<M, T:XCollectionCell>: CommonAdapter<M, T, UICollectionV
     ///   - collectionView: 传入UICollectionView
     ///   - datas: 数据源
     ///   - columnCount: 列数量
-    ///   - layout: <#layout description#>
-    ///   - convert: <#convert description#>
+    ///   - layout: 布局管理器
+    ///   - convert: 
     required init(_ collectionView: UICollectionView, datas: [M]? = nil, columnCount: Int, layout: UICollectionViewFlowLayout? = nil, convert: ((T, M, Int) -> Void)? = nil) {
         super.init()
         self.columnCount = columnCount
